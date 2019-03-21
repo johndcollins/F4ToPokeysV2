@@ -103,7 +103,7 @@
     <Compile Include="WpfControls\FalconConnected.xaml.cs">
       <DependentUpon>FalconConnected.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WpfControls\ModelObjects\FalconConnectedModelObject.cs" />
+    <Compile Include="WpfControls\ModelViews\FalconConnectedModelView.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

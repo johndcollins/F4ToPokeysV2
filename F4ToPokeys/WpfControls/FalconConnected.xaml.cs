@@ -1,4 +1,4 @@
-﻿using F4ToPokeys.WpfControls.ModelObjects;
+﻿using F4ToPokeys.WpfControls.ModelViews;
 using System;
 using System.Collections.Generic;
 using System.Linq;
