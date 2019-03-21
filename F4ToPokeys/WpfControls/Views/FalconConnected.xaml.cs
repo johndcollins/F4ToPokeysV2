@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace F4ToPokeys.WpfControls
+namespace F4ToPokeys.WpfControls.Views
 {
     /// <summary>
     /// Interaction logic for FalconConnected.xaml

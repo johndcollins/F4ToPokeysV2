@@ -100,7 +100,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Main.resx</DependentUpon>
     </Compile>
-    <Compile Include="WpfControls\FalconConnected.xaml.cs">
+    <Compile Include="WpfControls\Views\FalconConnected.xaml.cs">
       <DependentUpon>FalconConnected.xaml</DependentUpon>
     </Compile>
     <Compile Include="WpfControls\ModelViews\FalconConnectedModelView.cs" />
@@ -135,7 +135,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="WpfControls\FalconConnected.xaml">
+    <Page Include="WpfControls\Views\FalconConnected.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:F4ToPokeys"
-        xmlns:fc="clr-namespace:F4ToPokeys.WpfControls"
+        xmlns:fc="clr-namespace:F4ToPokeys.WpfControls.Views"
         mc:Ignorable="d"
         Title="F4ToPokeys" Height="450" Width="800">
     <Grid>
@@ -18,5 +18,7 @@
         </Grid.RowDefinitions>
         
         <fc:FalconConnected Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
+        
+        
     </Grid>
 </Window>
