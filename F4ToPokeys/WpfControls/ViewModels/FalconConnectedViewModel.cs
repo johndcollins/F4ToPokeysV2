@@ -6,13 +6,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace F4ToPokeys.WpfControls.ModelViews
+namespace F4ToPokeys.WpfControls.ViewModels
 {
-    public class FalconConnectedModelView : INotifyPropertyChanged
+    public class FalconConnectedViewModel : INotifyPropertyChanged
     {
         private bool m_connected;
 
-        public FalconConnectedModelView()
+        public FalconConnectedViewModel()
         {
             FalconConnector.Singleton.FalconStarted += Singleton_FalconStarted;
             FalconConnector.Singleton.FalconStopped += Singleton_FalconStopped;

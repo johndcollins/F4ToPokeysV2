@@ -50,36 +50,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="PoKeysDevice_DLL">
-      <HintPath>..\..\..\..\..\..\Program Files\PoLabs\PoKeys\PoKeysDevice_DLL.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Speech" />
-    <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xaml">
-      <RequiredTargetFramework>4.0</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="UsbWrapper">
-      <HintPath>..\pololu-usb-sdk\UsbWrapper_Windows\UsbWrapper.dll</HintPath>
-    </Reference>
-    <Reference Include="Usc">
-      <HintPath>..\pololu-usb-sdk\Maestro\Usc\Usc.dll</HintPath>
-    </Reference>
-    <Reference Include="WindowsBase" />
-    <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <ApplicationDefinition Include="App.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </ApplicationDefinition>
     <Compile Include="Common\SelectorHelper.cs" />
     <Compile Include="Converters\ConnectedValueConverter.cs" />
     <Compile Include="Converters\ConnectedColorConverter.cs" />
@@ -100,22 +72,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Main.resx</DependentUpon>
     </Compile>
-    <Compile Include="WpfControls\ViewModels\FalconSamplingIntervalViewModel.cs" />
-    <Compile Include="WpfControls\ViewModels\PokeysListViewModel.cs" />
+    <Compile Include="WpfControls\ViewsModels\PokeysListViewModel.cs" />
     <Compile Include="WpfControls\Views\FalconConnected.xaml.cs">
       <DependentUpon>FalconConnected.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WpfControls\ViewModels\FalconConnectedViewModel.cs" />
-    <Compile Include="WpfControls\Views\FalconSamplingInterval.xaml.cs">
-      <DependentUpon>FalconSamplingInterval.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="WpfControls\ViewsModels\FalconConnectedViewModel.cs" />
     <Compile Include="WpfControls\Views\PokeysList.xaml.cs">
       <DependentUpon>PokeysList.xaml</DependentUpon>
     </Compile>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -139,22 +103,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="NotifyIconResources.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="WpfControls\Views\FalconConnected.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="WpfControls\Views\FalconSamplingInterval.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="WpfControls\Views\PokeysList.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="NotifyIconViewModel.cs" />
@@ -202,7 +150,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="F4ToPokeys.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
@@ -218,4 +165,33 @@
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ReferencePath Include="C:\Users\John\source\repos\F4ToPokeysV2\F4SharedMem\bin\Debug\F4SharedMem.dll" />
+    <ReferencePath Include="C:\Users\John\source\repos\F4ToPokeysV2\NotifyIconWpf\bin\Debug\Hardcodet.Wpf.TaskbarNotification.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Microsoft.CSharp.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\mscorlib.dll" />
+    <ReferencePath Include="C:\Program Files\PoLabs\PoKeys\PoKeysDevice_DLL.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\PresentationCore.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\PresentationFramework.dll" />
+    <ReferencePath Include="C:\Users\John\source\repos\F4ToPokeysV2\SimplifiedCommon\bin\Debug\SimplifiedCommon.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Core.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Data.DataSetExtensions.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Data.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Net.Http.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Speech.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Xaml.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Xml.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Xml.Linq.dll" />
+    <ReferencePath Include="C:\Users\John\source\repos\F4ToPokeysV2\pololu-usb-sdk\UsbWrapper_Windows\UsbWrapper.dll" />
+    <ReferencePath Include="C:\Users\John\source\repos\F4ToPokeysV2\pololu-usb-sdk\Maestro\Usc\Usc.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\WindowsBase.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="C:\Users\John\source\repos\F4ToPokeysV2\F4ToPokeys\obj\Debug\MainWindow.g.cs" />
+    <Compile Include="C:\Users\John\source\repos\F4ToPokeysV2\F4ToPokeys\obj\Debug\WpfControls\Views\FalconConnected.g.cs" />
+    <Compile Include="C:\Users\John\source\repos\F4ToPokeysV2\F4ToPokeys\obj\Debug\WpfControls\Views\PokeysList.g.cs" />
+    <Compile Include="C:\Users\John\source\repos\F4ToPokeysV2\F4ToPokeys\obj\Debug\App.g.cs" />
+    <Compile Include="C:\Users\John\source\repos\F4ToPokeysV2\F4ToPokeys\obj\Debug\GeneratedInternalTypeHelper.g.cs" />
+  </ItemGroup>
 </Project>

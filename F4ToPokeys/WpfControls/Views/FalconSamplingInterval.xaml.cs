@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace F4ToPokeys.WpfControls.Views
 {
     /// <summary>
-    /// Interaction logic for FalconConnected.xaml
+    /// Interaction logic for FalconSamplingInterval.xaml
     /// </summary>
-    public partial class FalconConnected : UserControl
+    public partial class FalconSamplingInterval : UserControl
     {
-        public FalconConnected()
+        public FalconSamplingInterval()
         {
             InitializeComponent();
         }

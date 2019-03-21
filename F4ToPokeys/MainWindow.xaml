@@ -13,12 +13,12 @@
             <ColumnDefinition Width="100" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="20" />
+            <RowDefinition Height="25" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        
+
+        <fc:FalconSamplingInterval />
         <fc:FalconConnected Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
-        
         
     </Grid>
 </Window>
